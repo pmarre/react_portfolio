@@ -19,6 +19,7 @@ h4,
 h5,
 h6 {
   font-weight: 900;
+  letter-spacing: 1px;
 }
 
 strong {
@@ -31,8 +32,17 @@ a {
   font-weight: 900;
 }
 
+a,
+button {
+  cursor: pointer;
+}
+
 li {
   list-style: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 /* Navigation */
@@ -46,7 +56,7 @@ li {
   position: fixed;
   width: 0;
   height: 60px;
-  background-color: yellow;
+  background-color: #fff04c;
   z-index: 10;
   top: 0;
   left: 0;
@@ -87,6 +97,10 @@ li {
   display: none;
 }
 
+.navLogo {
+  font-weight: 900;
+}
+
 /* Hero Section */
 
 .heroContainer {
@@ -108,7 +122,7 @@ li {
 }
 
 .heroPortfolioLink {
-  border-bottom: 3px solid yellow;
+  border-bottom: 3px solid #fff04c;
   padding-bottom: 4px;
 }
 
@@ -126,7 +140,7 @@ li {
 }
 
 .fa:hover {
-  border-bottom: 4px solid yellow;
+  border-bottom: 4px solid #fff04c;
 }
 
 /* Portfolio Section */
@@ -146,7 +160,7 @@ li {
 
 .imageThumbnail {
   width: 100%;
-  height: 300px;
+  height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -170,8 +184,170 @@ li {
   width: 120px;
   border-radius: 20px;
   line-height: 40px;
-  background-color: yellow;
+  background-color: #fff04c;
   margin-top: 15px;
+  border: none;
+  font-size: 1rem;
+}
+
+.thumbnailLink:hover {
+  background-color: #000;
+  color: #fff04c;
+}
+
+/* Portfolio Overlay */
+
+.portfolioOverlay {
+  width: 100vw;
+  height: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  box-shadow: -4px 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.portfolioOverlay-inner-container {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: scroll;
+  -ms-overflow-style: none;
+}
+
+.portfolioOverlay-inner-container::-webkit-scrollbar {
+  display: none;
+}
+
+.portfolioHeader {
+  padding: 10px;
+  border-bottom: 3px solid #fff04c;
+  width: 270px;
+  margin: 0 auto;
+}
+
+.overlayHeader {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.overlayBtn {
+  display: inline-block;
+  height: 50px;
+  width: 120px;
+  border: 2px solid black;
+  line-height: 50px;
+  margin: 0 10px 20px;
+  font-weight: 100;
+  transition: all 0.2s ease-in-out;
+}
+
+.overlayBtn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.goalsHeader {
+  text-align: left;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.goalItem {
+  list-style: disc;
+  text-align: left;
+  margin: 10px 0 10px 40px;
+}
+
+.active-info {
+  height: 100vh;
+  transition: all 0.2s ease-in-out;
+}
+
+.closeMoreInfo {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 3px solid black;
+  font-weight: 900;
+  z-index: 200;
+  line-height: 24px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.closeMoreInfo:before {
+  content: 'X';
+}
+
+.closeMoreInfo:hover {
+  content: 'Close';
+  width: 100px;
+  border-radius: 15px;
+}
+
+.img {
+  height: auto;
+  width: 90%;
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+figure {
+  margin: 30px 0;
+}
+
+figcaption {
+  font-weight: 900;
+  font-size: 0.85rem;
+  margin-top: 10px;
+}
+/* Footer Section */
+
+.footerContainer {
+  width: 100%;
+  height: 700px;
+  background-color: #fff04c;
+  margin-top: 120px;
+}
+
+.footer-inner-container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-inner-container div {
+  margin-top: 20px;
+}
+
+.contactList {
+  width: 70%;
+  margin: 0 auto;
+}
+.contactItem {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.contactItem span {
+  align-self: center;
 }
 
 /* Media Queries */
@@ -196,6 +372,7 @@ li {
     margin: 0 10px;
     padding: 5px;
     transition: all 0.2s ease-in-out;
+    font-weight: 100;
   }
 
   .navItem:hover a {
@@ -217,5 +394,52 @@ li {
 
   .thumbnailParagraph {
     width: 70%;
+  }
+
+  .portfolioOverlay {
+    width: 70vw;
+  }
+
+  /* Footer Section */
+
+  .footerContainer {
+    height: 400px;
+  }
+
+  .footer-inner-container {
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-inner-container div {
+    margin: 60px 20px;
+  }
+  .footer-inner-container div h3 {
+    margin-bottom: 20px;
+  }
+
+  .aboutContainer {
+    flex: 2;
+  }
+
+  .downloadContainer,
+  .contactContainer {
+    flex: 1;
+  }
+
+  .contactList {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contactItem {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    text-align: left;
+  }
+
+  .contactItem span {
+    align-self: center;
   }
 }

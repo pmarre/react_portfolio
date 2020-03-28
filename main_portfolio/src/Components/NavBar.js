@@ -51,7 +51,7 @@ class NavBar extends React.Component {
             <li className="navItem-mobile">
               <a
                 className="navLink-mobile"
-                href="#portfolio"
+                href="#home"
                 onClick={this.openMobileMenu}>
                 HOME
               </a>
@@ -67,7 +67,7 @@ class NavBar extends React.Component {
             <li className="navItem-mobile">
               <a
                 className="navLink-mobile"
-                href="#portfolio"
+                href="#about"
                 onClick={this.openMobileMenu}>
                 ABOUT
               </a>
@@ -75,14 +75,25 @@ class NavBar extends React.Component {
             <li className="navItem-mobile">
               <a
                 className="navLink-mobile"
-                href="#portfolio"
+                href="#contact"
                 onClick={this.openMobileMenu}>
                 CONTACT
               </a>
             </li>
+            <li className="navItem-mobile">
+              <a
+                className="navLink-mobile"
+                href="../assets/resume/pmarre_2020.pdf"
+                target="_blank"
+                onClick={this.openMobileMenu}>
+                RESUME
+              </a>
+            </li>
           </ul>
         </div>
-        <div className="navLogo">LOGO</div>
+        <a className="navLogo" href="#home">
+          PM
+        </a>
         <div
           className="mobileNavIcon"
           id="mobileMenu"
@@ -92,7 +103,7 @@ class NavBar extends React.Component {
         <div className="fullNav">
           <ul className="fullNavContainer">
             <li className="navItem">
-              <a className="navLink" href="#portfolio">
+              <a className="navLink" href="#home">
                 HOME
               </a>
             </li>
@@ -102,13 +113,21 @@ class NavBar extends React.Component {
               </a>
             </li>
             <li className="navItem">
-              <a className="navLink" href="#portfolio">
+              <a className="navLink" href="#about">
                 ABOUT
               </a>
             </li>
             <li className="navItem">
-              <a className="navLink" href="#portfolio">
+              <a className="navLink" href="#contact">
                 CONTACT
+              </a>
+            </li>
+            <li className="navItem">
+              <a
+                className="navLink"
+                href="../assets/resume/pmarre_2020.pdf"
+                target="_blank">
+                RESUME
               </a>
             </li>
           </ul>

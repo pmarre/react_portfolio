@@ -2,7 +2,7 @@ import React from 'react';
 
 function Hero(props) {
   return (
-    <section className="hero-inner-container">
+    <section className="hero-inner-container" id="#home">
       <p className="heroContent">
         My name is <strong>Patrick Marre</strong>. I am a Software Engineer with
         a focus on the frontend. I have experience with HTML, CSS, Javascript,
