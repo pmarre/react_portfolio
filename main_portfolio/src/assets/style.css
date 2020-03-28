@@ -1,0 +1,221 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,900&display=swap');
+/* General Styling */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+}
+
+strong {
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 900;
+}
+
+li {
+  list-style: none;
+}
+
+/* Navigation */
+
+.navContainer {
+  width: 100%;
+  height: 60px;
+}
+
+.mobileOverlay {
+  position: fixed;
+  width: 0;
+  height: 60px;
+  background-color: yellow;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.mobileNavContainer {
+  align-self: center;
+  text-align: center;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.navItem-mobile {
+  padding: 10px;
+  margin: 10px;
+}
+
+.closeMenu {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  font-weight: 900;
+}
+
+.nav-inner-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.fullNav {
+  display: none;
+}
+
+/* Hero Section */
+
+.heroContainer {
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+}
+
+.hero-inner-container {
+  align-self: center;
+  width: 80%;
+}
+
+.heroContent {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.heroPortfolioLink {
+  border-bottom: 3px solid yellow;
+  padding-bottom: 4px;
+}
+
+.socialIcons {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.fa {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  padding: 5px;
+  border-bottom: 4px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.fa:hover {
+  border-bottom: 4px solid yellow;
+}
+
+/* Portfolio Section */
+
+.portfolioHeader {
+  text-align: center;
+}
+
+.cardContainer {
+  width: 90%;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.imageThumbnail {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('/Users/patrickmarre/Desktop/react_portfolio/react_portfolio/main_portfolio/src/assets/images/jordanPipesBand-thumbnail.png');
+}
+
+.thumbnailContent {
+  width: 100%;
+  padding: 20px;
+  align-self: center;
+  text-align: center;
+}
+
+.thumbnailParagraph {
+  margin: 10px auto;
+}
+
+.thumbnailLink {
+  display: inline-block;
+  height: 40px;
+  width: 120px;
+  border-radius: 20px;
+  line-height: 40px;
+  background-color: yellow;
+  margin-top: 15px;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  /* Navigation */
+  .mobileNavIcon {
+    display: none;
+  }
+
+  .fullNav {
+    display: flex;
+  }
+
+  .fullNavContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .navItem a {
+    margin: 0 10px;
+    padding: 5px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .navItem:hover a {
+    background-color: #000;
+    color: #fff;
+  }
+
+  /* Hero */
+
+  .hero-inner-container {
+    width: 70%;
+  }
+
+  /* Portfolio Section  */
+  .cardContainer {
+    width: 80%;
+    flex-direction: row;
+  }
+
+  .thumbnailParagraph {
+    width: 70%;
+  }
+}
