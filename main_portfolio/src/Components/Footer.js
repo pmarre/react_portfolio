@@ -1,6 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import Resume from '../assets/resume/pmarre_2020.pdf';
+
 function Footer() {
   let iconStyle = {
     fontSize: '2.5rem',
@@ -30,7 +32,11 @@ function Footer() {
       </div>
       <div className="downloadContainer">
         <h3 className="downloadHeader uppercase">Download Resume</h3>
-        <a href="#portfolio" className="downloadLink">
+        <a
+          href={Resume}
+          className="downloadLink"
+          target="_blank"
+          rel="noopener noreferrer">
           <FontAwesomeIcon icon="file-download" style={largeIconStyle} />
         </a>
       </div>

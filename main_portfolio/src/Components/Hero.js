@@ -1,6 +1,15 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Hero(props) {
+  let socialStyles = {
+    margin: '0 10px',
+    fontSize: '1.5rem',
+    padding: '5px',
+    borderBottom: '4px solid transparent',
+    transition: 'all 0.2s ease-in-out'
+  };
+
   return (
     <section className="hero-inner-container" id="#home">
       <p className="heroContent">
@@ -12,30 +21,38 @@ function Hero(props) {
         </a>
         . Enjoy.
       </p>
-      <div className="socialIcons">
+      <div className="socialIconsContainer">
         <a
           href="https://github.com/pmarre"
           target="_blank"
+          className="socialIcons"
+          style={socialStyles}
           rel="noopener noreferrer">
-          <i className="fa fa-github"></i>
+          <FontAwesomeIcon icon={['fab', 'github']} />
         </a>
         <a
           href="https://www.facebook.com"
           target="_blank"
+          className="socialIcons"
+          style={socialStyles}
           rel="noopener noreferrer">
-          <i className="fa fa-facebook"></i>
+          <FontAwesomeIcon icon={['fab', 'facebook-f']} />
         </a>
         <a
           href="https://www.instagram.com/pmdelyte"
           target="_blank"
+          className="socialIcons"
+          style={socialStyles}
           rel="noopener noreferrer">
-          <i className="fa fa-instagram"></i>
+          <FontAwesomeIcon icon={['fab', 'instagram']} />
         </a>
         <a
           href="https://www.linkedin.com/in/patrickmarre"
           target="_blank"
+          className="socialIcons"
+          style={socialStyles}
           rel="noopener noreferrer">
-          <i className="fa fa-linkedin"></i>
+          <FontAwesomeIcon icon={['fab', 'linkedin']} />
         </a>
       </div>
     </section>

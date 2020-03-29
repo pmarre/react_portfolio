@@ -6,6 +6,8 @@ import PortfolioOverlay from '../Components/PortfolioOverlay';
 
 //Image Imports
 import jordanPipesThumbnail from '../assets/images/jordanpipes/jordanPipesBand-thumbnail.png';
+import jordanPipesBandContact from '../assets/images/jordanpipes/jordanPipesBandContact.png';
+import jordanPipesBandTourDates from '../assets/images/jordanpipes/jordanPipesBandTourDates.png';
 
 // Pet Shop Images
 import sandysPetThumbnail from '../assets/images/petshop/pet_shop_hp.png';
@@ -51,6 +53,11 @@ class PortfolioContainer extends React.Component {
           thumbnailImage={jordanPipesThumbnail}
           id="portfolioThumbnail-1"
           onClick={this.handleClick}
+          tools={[
+            ['fab', 'html5'],
+            ['fab', 'css3-alt'],
+            ['fab', 'bootstrap']
+          ]}
         />
         <PortfolioThumbnail
           projectTitle="Sandy's Pet Shop"
@@ -58,6 +65,12 @@ class PortfolioContainer extends React.Component {
           thumbnailImage={sandysPetThumbnail}
           id="portfolioThumbnail-2"
           onClick={this.handleClick}
+          tools={[
+            ['fab', 'html5'],
+            ['fab', 'css3-alt'],
+            ['fab', 'js'],
+            ['fab', 'php']
+          ]}
         />
         <PortfolioThumbnail
           projectTitle="Country API"
@@ -67,31 +80,37 @@ class PortfolioContainer extends React.Component {
           thumbnailImage={countryAPIThumbnail}
           id="portfolioThumbnail-3"
           onClick={this.handleClick}
+          tools={[
+            ['fab', 'html5'],
+            ['fab', 'css3-alt'],
+            ['fab', 'js'],
+            ['fab', 'bootstrap']
+          ]}
         />
         {/* ---- Portfolio Overlays ---- */}
         <PortfolioOverlay
           addClass="overlay-1"
           id="overlay-1"
           mainHeader="The Jordan Pipes Band"
-          description="text here"
-          goals={[1, 2, 3, 4]}
+          description="The was as prompt from a Code Institute course focused building a User Centric website with only HTML and CSS. Libraries such as Bootstrap and Hover.CSS were allowed and used in this project. "
+          goals={[
+            'Make a multipage, responsive website',
+            'Target multiple audiences',
+            'Add effects to better the user experience'
+          ]}
           onClick={this.handleClick}
           githubLink="https://github.com/pmarre/full_stack_cert/tree/master/01_html_css/user_centric_dev/milestone_project"
           liveLink="https://pmarre.github.io/full_stack_cert/01_html_css/user_centric_dev/milestone_project/index.html"
           homepageImage={jordanPipesThumbnail}
           homepageImageSubtext="The Jordan Pipes Band Homepage"
-          featureOneHeader="Feature One"
-          featureOneDescription="Feature one description here"
-          featureOneImage="image"
-          featureOneSubtext="text here"
-          featureTwoHeader="Feature Two"
-          featureTwoDescription="Feature one description here"
-          featureTwoImage="image"
-          featureTwoSubtext="text here"
-          featureThreeHeader="Feature Three"
-          featureThreeDescription="Feature one description here"
-          featureThreeImage="image"
-          featureThreeSubtext="text here"
+          featureOneHeader="Social Icons on Hover"
+          featureOneDescription="As users view tour dates, an option to share a concert with friends appears using a hover effect"
+          featureOneImage={jordanPipesBandTourDates}
+          featureOneSubtext="Hover effect on Tour Dates page"
+          featureTwoHeader="Contact Page"
+          featureTwoDescription="A simple contact form designed to contact the band to book them for a show."
+          featureTwoImage={jordanPipesBandContact}
+          featureTwoSubtext="The Jordan Pipes Band Contact Page"
         />
         <PortfolioOverlay
           addClass="overlay-2"

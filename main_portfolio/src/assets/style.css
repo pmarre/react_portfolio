@@ -126,21 +126,13 @@ li {
   padding-bottom: 4px;
 }
 
-.socialIcons {
+.socialIconsContainer {
   text-align: center;
   margin: 30px 0;
 }
 
-.fa {
-  margin: 0 10px;
-  font-size: 1.5rem;
-  padding: 5px;
-  border-bottom: 4px solid transparent;
-  transition: all 0.2s ease-in-out;
-}
-
-.fa:hover {
-  border-bottom: 4px solid #fff04c;
+.socialIcons:hover {
+  border-bottom: 4px solid #fff04c !important;
 }
 
 /* Portfolio Section */
@@ -193,6 +185,22 @@ li {
 .thumbnailLink:hover {
   background-color: #000;
   color: #fff04c;
+}
+
+.toolsUsedList {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.toolsList li {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 0.85rem;
+  font-weight: 900;
+}
+
+.tools {
+  font-size: 1.25rem;
 }
 
 /* Portfolio Overlay */

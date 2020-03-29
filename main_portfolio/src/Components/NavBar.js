@@ -1,4 +1,5 @@
 import React from 'react';
+import Resume from '../assets/resume/pmarre_2020.pdf';
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -83,8 +84,9 @@ class NavBar extends React.Component {
             <li className="navItem-mobile">
               <a
                 className="navLink-mobile"
-                href="../assets/resume/pmarre_2020.pdf"
+                href={Resume}
                 target="_blank"
+                rel="noopener noreferrer"
                 onClick={this.openMobileMenu}>
                 RESUME
               </a>
@@ -125,7 +127,8 @@ class NavBar extends React.Component {
             <li className="navItem">
               <a
                 className="navLink"
-                href="../assets/resume/pmarre_2020.pdf"
+                href={Resume}
+                rel="noopener noreferrer"
                 target="_blank">
                 RESUME
               </a>

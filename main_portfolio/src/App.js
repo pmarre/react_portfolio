@@ -1,5 +1,18 @@
 import React from 'react';
+
+// Import Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+  faFacebookF,
+  faGithub,
+  faInstagram,
+  faLinkedin,
+  faHtml5,
+  faCss3Alt,
+  faBootstrap,
+  faJs,
+  faPhp
+} from '@fortawesome/free-brands-svg-icons';
 import {
   faMobileAlt,
   faPaperPlane,
@@ -16,7 +29,22 @@ import HeroContainer from './Containers/HeroContainer';
 import NavContainer from './Containers/NavContainer';
 import FooterContainer from './Containers/FooterContainer';
 
-library.add(faMobileAlt, faPaperPlane, faMapMarkerAlt, faFileDownload);
+// Font Awesome Library
+library.add(
+  faMobileAlt,
+  faPaperPlane,
+  faMapMarkerAlt,
+  faFileDownload,
+  faFacebookF,
+  faGithub,
+  faInstagram,
+  faLinkedin,
+  faHtml5,
+  faCss3Alt,
+  faBootstrap,
+  faJs,
+  faPhp
+);
 function App() {
   return (
     <div className="AppContainer">
