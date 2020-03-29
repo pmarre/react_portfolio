@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/react_portfolio/main_portfolio/static/css/main.eb6d45a4.chunk.css",
+    "main.js": "/react_portfolio/main_portfolio/static/js/main.5c2bc943.chunk.js",
+    "main.js.map": "/react_portfolio/main_portfolio/static/js/main.5c2bc943.chunk.js.map",
+    "runtime-main.js": "/react_portfolio/main_portfolio/static/js/runtime-main.d241fdca.js",
+    "runtime-main.js.map": "/react_portfolio/main_portfolio/static/js/runtime-main.d241fdca.js.map",
+    "static/css/2.956ff246.chunk.css": "/react_portfolio/main_portfolio/static/css/2.956ff246.chunk.css",
+    "static/js/2.1dd8f8a1.chunk.js": "/react_portfolio/main_portfolio/static/js/2.1dd8f8a1.chunk.js",
+    "static/js/2.1dd8f8a1.chunk.js.map": "/react_portfolio/main_portfolio/static/js/2.1dd8f8a1.chunk.js.map",
+    "index.html": "/react_portfolio/main_portfolio/index.html",
+    "precache-manifest.7fd827ff9db3b5da93b2b34d9c98be01.js": "/react_portfolio/main_portfolio/precache-manifest.7fd827ff9db3b5da93b2b34d9c98be01.js",
+    "service-worker.js": "/react_portfolio/main_portfolio/service-worker.js",
+    "static/css/2.956ff246.chunk.css.map": "/react_portfolio/main_portfolio/static/css/2.956ff246.chunk.css.map",
+    "static/css/main.eb6d45a4.chunk.css.map": "/react_portfolio/main_portfolio/static/css/main.eb6d45a4.chunk.css.map",
+    "static/js/2.1dd8f8a1.chunk.js.LICENSE.txt": "/react_portfolio/main_portfolio/static/js/2.1dd8f8a1.chunk.js.LICENSE.txt",
+    "static/media/countryAPI-darkmode.png": "/react_portfolio/main_portfolio/static/media/countryAPI-darkmode.e29a9718.png",
+    "static/media/countryAPI-hp.png": "/react_portfolio/main_portfolio/static/media/countryAPI-hp.75469f98.png",
+    "static/media/countryAPI-search.png": "/react_portfolio/main_portfolio/static/media/countryAPI-search.ce133b3a.png",
+    "static/media/font-awesome.min.css": "/react_portfolio/main_portfolio/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/jordanPipesBand-thumbnail.png": "/react_portfolio/main_portfolio/static/media/jordanPipesBand-thumbnail.2808e6a1.png",
+    "static/media/jordanPipesBandContact.png": "/react_portfolio/main_portfolio/static/media/jordanPipesBandContact.654e3b6c.png",
+    "static/media/jordanPipesBandTourDates.png": "/react_portfolio/main_portfolio/static/media/jordanPipesBandTourDates.02bfecb4.png",
+    "static/media/pet_shop_admin.png": "/react_portfolio/main_portfolio/static/media/pet_shop_admin.61d3fe47.png",
+    "static/media/pet_shop_hp.png": "/react_portfolio/main_portfolio/static/media/pet_shop_hp.768684a2.png",
+    "static/media/pet_shop_location.png": "/react_portfolio/main_portfolio/static/media/pet_shop_location.79ec3e7c.png",
+    "static/media/pmarre_2020.pdf": "/react_portfolio/main_portfolio/static/media/pmarre_2020.1cce1969.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d241fdca.js",
+    "static/css/2.956ff246.chunk.css",
+    "static/js/2.1dd8f8a1.chunk.js",
+    "static/css/main.eb6d45a4.chunk.css",
+    "static/js/main.5c2bc943.chunk.js"
+  ]
+}
