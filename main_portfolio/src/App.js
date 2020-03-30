@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashRouter, Switch } from 'react-router-dom';
 
 // Import Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -47,12 +48,16 @@ library.add(
 );
 function App() {
   return (
-    <div className="AppContainer">
-      <NavContainer />
-      <HeroContainer />
-      <PortfolioContainer />
-      <FooterContainer />
-    </div>
+    <HashRouter>
+      <Switch>
+        <div className="AppContainer">
+          <NavContainer />
+          <HeroContainer />
+          <PortfolioContainer />
+          <FooterContainer />
+        </div>
+      </Switch>
+    </HashRouter>
   );
 }
 
