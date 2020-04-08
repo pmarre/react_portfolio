@@ -19,13 +19,16 @@ import countryAPIThumbnail from '../assets/images/countryAPI/countryAPI-hp.png';
 import countryAPIDarkmode from '../assets/images/countryAPI/countryAPI-darkmode.png';
 import countryAPISearch from '../assets/images/countryAPI/countryAPI-search.png';
 
+//Quarantini Images
+import quarantiniThumbnail from '../assets/images/quarantini/quarantini-hp.png';
+
 class PortfolioContainer extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick = e => {
+  handleClick = (e) => {
     let target = e.target;
     console.log(e.target.id);
     if (target.classList.contains('thumbnailLink')) {
@@ -56,7 +59,7 @@ class PortfolioContainer extends React.Component {
           tools={[
             ['fab', 'html5'],
             ['fab', 'css3-alt'],
-            ['fab', 'bootstrap']
+            ['fab', 'bootstrap'],
           ]}
         />
         <PortfolioThumbnail
@@ -69,22 +72,20 @@ class PortfolioContainer extends React.Component {
             ['fab', 'html5'],
             ['fab', 'css3-alt'],
             ['fab', 'js'],
-            ['fab', 'php']
+            ['fab', 'php'],
           ]}
         />
         <PortfolioThumbnail
-          projectTitle="Country API"
-          projectDescription=" A single-page project built from a Frontend Mentor prompt.
-        Utilizes the Rest Countries API. Built with HTML5, CSS3,
-        Bootstrap, AJAX, and JQuery."
-          thumbnailImage={countryAPIThumbnail}
+          projectTitle="Quarantini"
+          projectDescription="Interactive website project from Code Institute.
+        Utilizes the Spoonacular API. Built with HTML5, CSS3, Javascript, and JQuery."
+          thumbnailImage={quarantiniThumbnail}
           id="portfolioThumbnail-3"
           onClick={this.handleClick}
           tools={[
             ['fab', 'html5'],
             ['fab', 'css3-alt'],
             ['fab', 'js'],
-            ['fab', 'bootstrap']
           ]}
         />
         {/* ---- Portfolio Overlays ---- */}
@@ -96,7 +97,7 @@ class PortfolioContainer extends React.Component {
           goals={[
             'Make a multipage, responsive website',
             'Target multiple audiences',
-            'Add effects to better the user experience'
+            'Add effects to better the user experience',
           ]}
           onClick={this.handleClick}
           githubLink="https://github.com/pmarre/full_stack_cert/tree/master/01_html_css/user_centric_dev/milestone_project"
@@ -124,7 +125,7 @@ class PortfolioContainer extends React.Component {
           goals={[
             'Fully functioning website',
             'Location API using Google Maps',
-            'Responsive Layout'
+            'Responsive Layout',
           ]}
           onClick={this.handleClick}
           githubLink="https://github.com/pmarre/sandys_pet_shop"
@@ -143,19 +144,19 @@ class PortfolioContainer extends React.Component {
         <PortfolioOverlay
           addClass="overlay-3"
           id="overlay-3"
-          mainHeader="Country API"
-          description="Project idea from Frontend Mentor."
-          goals={['Connect and display data from API', 'Dark Mode']}
+          mainHeader="Quarantini"
+          description="Code Insitute Milestone #2 Project"
+          goals={['Connect and display data from API', 'Interactive site']}
           onClick={this.handleClick}
-          githubLink="https://github.com/pmarre/country_api"
-          liveLink="http://pmarre.com/Frontend_Mentor/CountryAPI/index.html"
-          homepageImage={countryAPIThumbnail}
+          githubLink="https://github.com/pmarre/full_stack_cert/tree/master/03_interactive_frontend_development/milestone_2"
+          liveLink="https://pmarre.github.io/full_stack_cert/03_interactive_frontend_development/milestone_2/"
+          homepageImage={quarantiniThumbnail}
           featureOneHeader="Switching to Dark Mode"
           featureOneDescription="I used jQuery and CSS to toggle 'Dark Mode'"
-          featureOneImage={countryAPIDarkmode}
+          featureOneImage={quarantiniThumbnail}
           featureOneSubtext="Webpage in dark mode."
           featureTwoHeader="Searching For A Country"
-          featureTwoImage={countryAPISearch}
+          featureTwoImage={quarantiniThumbnail}
           featureTwoSubtext="Country API search for country."
         />
       </div>
